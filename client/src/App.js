@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { themeSettings } from "./theme";
+import { ScrollToTop } from "components";
 
 const App = () => {
   const mode = useSelector((state) => state.mode);
@@ -16,6 +17,7 @@ const App = () => {
       <BrowserRouter>
         <ThemeProvider theme={theme}>
           <CssBaseline />
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<LoginPage />} />
             <Route
