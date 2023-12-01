@@ -1,2 +1,3 @@
 # mern-social-media
- Full stack Project
+ This is a MERN stack Project for social media platform.
+ 
